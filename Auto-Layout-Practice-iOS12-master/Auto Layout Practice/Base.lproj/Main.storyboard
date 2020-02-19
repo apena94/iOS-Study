@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-3Y-LwE" userLabel="Bottom Container">
+                                <rect key="frame" x="0.0" y="187.5" width="667" height="187.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notebook" translatesAutoresizingMaskIntoConstraints="NO" id="APB-hN-Zgl">
+                                        <rect key="frame" x="285.5" y="30" width="96" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="13D-x0-tsl"/>
+                                            <constraint firstAttribute="width" constant="96" id="5Yn-7U-O4i"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="APB-hN-Zgl" firstAttribute="centerX" secondItem="PrB-3Y-LwE" secondAttribute="centerX" id="GOX-7C-TOE"/>
+                                    <constraint firstItem="APB-hN-Zgl" firstAttribute="centerY" secondItem="PrB-3Y-LwE" secondAttribute="centerY" id="XA0-4w-Jaj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3w-Cj-XKy" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="187.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artBoard" translatesAutoresizingMaskIntoConstraints="NO" id="4dG-Q3-yix">
+                                        <rect key="frame" x="269" y="30" width="129" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="5qw-fj-9n4"/>
+                                            <constraint firstAttribute="height" constant="128" id="hv6-mc-2NW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="4dG-Q3-yix" firstAttribute="centerY" secondItem="O3w-Cj-XKy" secondAttribute="centerY" id="42r-Sl-y5E"/>
+                                    <constraint firstItem="4dG-Q3-yix" firstAttribute="centerX" secondItem="O3w-Cj-XKy" secondAttribute="centerX" id="rmf-R2-KRB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O3w-Cj-XKy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4Yf-7W-M23"/>
+                            <constraint firstItem="O3w-Cj-XKy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EAY-FG-eTq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PrB-3Y-LwE" secondAttribute="bottom" id="PxZ-V4-ERC"/>
+                            <constraint firstItem="PrB-3Y-LwE" firstAttribute="top" secondItem="O3w-Cj-XKy" secondAttribute="bottom" id="Slt-6M-R8B"/>
+                            <constraint firstAttribute="trailing" secondItem="O3w-Cj-XKy" secondAttribute="trailing" id="onq-Xv-W1C"/>
+                            <constraint firstItem="PrB-3Y-LwE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rBk-0o-Vlp"/>
+                            <constraint firstAttribute="trailing" secondItem="PrB-3Y-LwE" secondAttribute="trailing" id="rZP-qv-otR"/>
+                            <constraint firstItem="PrB-3Y-LwE" firstAttribute="height" secondItem="O3w-Cj-XKy" secondAttribute="height" id="y1J-6o-jgv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="artBoard" width="433" height="533"/>
+        <image name="notebook" width="373.5" height="527"/>
+    </resources>
+</document>
